@@ -29,4 +29,4 @@ colnames(dataSet)[3:68]<-paste(variableNames[variableL,2])
 #Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 dataSetMelt<-melt(dataSet, id=c("activityLabels", "subjects"),  na.rm=TRUE)
 dataSetCast<-dcast(dataSetMelt, activityLabels + subjects ~ variable, mean)
-write.table(dataSetCast, file="TidyDataSetFinal", quote=TRUE, sep=" ", row.names=FALSE)
+write.table(dataSetCast, file="TidyDataSetFinal.txt", quote=TRUE, sep=" ", row.names=FALSE)
