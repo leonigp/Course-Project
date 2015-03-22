@@ -9,7 +9,7 @@ The third block (lines 17-20) chooses the column indices corresponding to mean a
 
 The fourth block (lines 23-27) provides the activity labels (factor()) and merges (cbind()) the activity labels, the subjects (dataSetS) and the data set subset (dataSetSelect). The, it procedes to name the secind column ("subjects") and columns 3:68 using a subset of variableNames, namely variableL.
 
-The fifth block (lines 29-31) uses the melt() and dcast() functions to provide each variable's average for each activity and each subject within that activity. Finally it uses wtie.table() to write the new data set into a file.
+The fifth block (lines 29-31) uses the melt() and dcast() functions to provide each variable's average for each activity and each subject within that activity. Finally it uses write.table() to write the new data set into a .txt file.
 
 
 
